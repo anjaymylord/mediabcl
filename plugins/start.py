@@ -124,12 +124,7 @@ async def start_command(client: Bot, message: Message):
     await message.reply_text("Halo! Selamat datang di bot kami.")
 
     # Jika Anda ingin mengirim pesan dengan markup atau tombol tambahan
-    reply_markup = InlineKeyboardMarkup(
-        [
-            [InlineKeyboardButton("Tombol 1", callback_data="button1")],
-            [InlineKeyboardButton("Tombol 2", callback_data="button2")]
-        ]
-    )
+
     await message.reply_text("Halo! Selamat datang di bot kami.", reply_markup=reply_markup)
 
 
