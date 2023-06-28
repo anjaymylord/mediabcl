@@ -128,9 +128,7 @@ async def not_joined(client: Client, message: Message):
                 )
             ]
         )
-    except IndexError:
-        pass
-
+        
     await message.reply(
         text = FORCE_MSG.format(
                 first = message.from_user.first_name,
