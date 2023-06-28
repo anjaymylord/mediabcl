@@ -119,7 +119,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
     
 @Bot.on_message(filters.command('start') & filters.private)
-async def start_command(client: Bot, message: Message):
+async def not_joined(client: Bot, message: Message):
     # Mengirim pesan kepada pengguna
     await message.reply_text("Halo! Selamat datang di bot kami.")
 
